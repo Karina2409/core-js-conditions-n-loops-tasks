@@ -73,10 +73,7 @@ function canQueenCaptureKing(queen, king) {
   if (queen.x === queen.y && king.x === king.y) {
     return true;
   }
-  if (queen.x - king.x === king.y - queen.y) {
-    return true;
-  }
-  return false;
+  return queen.x - king.x === king.y - queen.y;
 }
 
 /**
@@ -101,10 +98,7 @@ function isIsoscelesTriangle(a, b, c) {
   if (a + b <= c || a + c <= b || b + c <= a) {
     return false;
   }
-  if (a === b || b === c || a === c) {
-    return true;
-  }
-  return false;
+  return a === b || b === c || a === c;
 }
 
 /**
@@ -397,6 +391,29 @@ function getSpiralMatrix(size) {
  *  ]                 ]
  */
 function rotateMatrix(/* matrix */) {
+  // const size = matrix.length;
+  // const result = [];
+  // for (let i = 0; i < size; i += 1) {
+  //   result[i] = [];
+  //   for (let j = 0; j < size; j += 1) {
+  //     result[i][j] = matrix[i][j];
+  //   }
+  // }
+  // for (let layer = 0; layer < Math.floor(size / 2); layer += 1) {
+  //   const first = layer;
+  //   const last = size - 1 - layer;
+  //
+  //   for (let i = first; i < last; i += 1) {
+  //     const offset = i - first;
+  //     const top = result[first][i];
+  //     result[first][i] = result[last - offset][first];
+  //     result[last - offset][first] = result[last][last - offset];
+  //     result[last][last - offset] = result[i][last];
+  //     result[i][last] = top;
+  //   }
+  // }
+  //
+  // return result;
   throw new Error('Not implemented');
 }
 
@@ -415,6 +432,16 @@ function rotateMatrix(/* matrix */) {
  *  [-2, 9, 5, -3]  => [-3, -2, 5, 9]
  */
 function sortByAsc(/* arr */) {
+  // for (let i = 0; i < arr.length; i += 1) {
+  //   for (let j = 0; j < arr.length; j += 1) {
+  //     if (arr[j] < arr[j + 1]) {
+  //       const b = arr[j];
+  //       arr[j] = arr[j + 1];
+  //       arr[j + 1] = b;
+  //     }
+  //   }
+  // }
+  // return arr;
   throw new Error('Not implemented');
 }
 
